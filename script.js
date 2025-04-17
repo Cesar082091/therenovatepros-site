@@ -3,9 +3,13 @@ const sidebar = document.getElementById("sidebar");
 const closeBtn = document.getElementById("close-btn");
 
 // Open sidebar
-menuToggle.addEventListener("click", () => {
-  sidebar.classList.add("active");
+const menuToggleMobile = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
+
+menuToggleMobile.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
 });
+
 
 // Close sidebar
 closeBtn.addEventListener("click", () => {
