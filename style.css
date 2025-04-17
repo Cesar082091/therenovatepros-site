@@ -121,13 +121,14 @@ footer {
 
 /* ====== NAVBAR FIXED & RESPONSIVE ====== */
 .navbar {
-  background-color: #0a1930;
-  padding: 0.5rem;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 999;
+  left: 0;
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  background-color: #0a1930;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 .navbar ul {
@@ -166,4 +167,9 @@ footer {
   .navbar li {
     margin: 0.25rem 0;
   }
+}
+
+/* Add padding to body so content isn't hidden behind navbar */
+body {
+  padding-top: 80px;
 }
