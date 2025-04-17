@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: #f9f9f9;
   color: #333;
   text-align: center;
@@ -39,7 +39,7 @@ section {
   background: white;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery {
@@ -69,7 +69,8 @@ form {
   margin: auto;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -118,11 +119,15 @@ footer {
   z-index: 1000;
 }
 
-
+/* ====== NAVBAR FIXED & RESPONSIVE ====== */
 .navbar {
   background-color: #0a1930;
   padding: 0.5rem;
-  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -135,18 +140,30 @@ footer {
 }
 
 .navbar li {
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   padding: 0.5rem;
-  display: inline-block;
+  transition: background 0.3s ease;
 }
 
 .navbar a:hover {
   background-color: #1e90ff;
-  border-radius: 5px;
+  border-radius: 4px;
+}
+
+/* Responsive: collapse to column */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 0.25rem 0;
+  }
 }
