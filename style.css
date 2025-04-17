@@ -15,7 +15,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   color: #fff;
-  background-color: #0a1930; /* Dark green background */
+  background-color: #102321; /* Dark green background */
 }
 
 /* Navbar */
@@ -25,7 +25,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: #0a1930; /* Dark green */
+  background-color: #102321; /* Updated background color */
   padding: 0.75rem 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
@@ -149,7 +149,7 @@ h2 {
 
 /* Footer */
 footer {
-  background: #0a1930; /* Dark green */
+  background: #102321; /* Updated background color */
   color: white;
   padding: 1rem;
   text-align: center;
@@ -193,7 +193,7 @@ body {
   left: -100%;
   width: 250px;
   height: 100%;
-  background-color: #0a1930; /* Dark green */
+  background-color: #102321; /* Updated background color */
   color: white;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   transition: left 0.3s ease;
