@@ -1,9 +1,155 @@
-body {
+/* General Reset */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Inter", sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #f0a500;
+}
+
+.navbar .cta {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .cta .cart {
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .cta .btn {
+  background-color: #f0a500;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .cta .btn:hover {
+  background-color: #d18e00;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("https://via.placeholder.com/1920x1080") no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background-color: #f0a500;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #d18e00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    display: none;
+    background-color: #0d0d0d;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .cta {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
 
 header {
